@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: httpd
   namespace: apps
-  label:
+  labels:
     app.kubernetes.io/name: httpd
 spec:
   containers:
