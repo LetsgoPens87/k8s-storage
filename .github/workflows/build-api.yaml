@@ -29,7 +29,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t danblanco/s3-api:${{ env.TAG_NAME }} api/src
+        run: docker build -t dhricko9/s3-api:${{ env.TAG_NAME }} api/src
 
       - name: Push Docker image
-        run: docker push danblanco/s3-api:${{ env.TAG_NAME }}
+        run: docker push dhricko9/s3-api:${{ env.TAG_NAME }}
+
