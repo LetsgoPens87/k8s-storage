@@ -19,8 +19,8 @@ spec:
       - name: api
         env: 
         - name: S3_BUCKET
-          value: bucket-daniel-abc-123 # maybe replace env variables with secrets?
-        image: danblanco/s3-api:latest
+          value: kubernetes-cluster-bucket-dan # maybe replace env variables with secrets?
+        image: dhricko9/s3-api:latest
         ports:
         - containerPort: 8000
 
@@ -41,3 +41,4 @@ spec:
       name: http
   selector:
     app: api
+
